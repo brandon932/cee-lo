@@ -1,13 +1,16 @@
 console.log("Welcome to Cee-Lo");
 var die = 0;
 
-var player = [], computer = [];
+var player1 = [], computer = [];
 
-function roll(){
+function roll(player){
   for (var i = 0; i < 3; i++) {
   die = Math.ceil(Math.random()*6);
-    player.push(die);
+  player.push(die);
   }
-    console.log(player);
+    // console.log(player);
 }
-roll();
+roll(computer);
+roll(player1);
+console.log(computer);
+console.log(player1);
